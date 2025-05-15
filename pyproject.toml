@@ -9,5 +9,7 @@ dependencies = [
     "argparse>=1.4.0",
     "httpx>=0.28.1",
     "mcp[cli]>=1.2.1",
+    "openai>=1.78.1",
     "python-dotenv>=1.0.1",
+    "requests>=2.32.3",
 ]

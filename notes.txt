@@ -1,0 +1,30 @@
+# Start server
+
+uv run weather.py
+
+# Starts Anthropic client
+
+Requires purchasing a plan with Anthropic to obtain an apikey:
+
+python client-ollama.py http://localhost:8080/sse
+
+# Starts OpenAI client
+
+Requires purchasing a plan with OpenAI to obtain an apikey, and after
+creating a key, put it in .env file
+
+python client-openai.py http://localhost:8080/sse
+
+use this query: get weather of scarsdale, ny
+
+# Starts Ollama client
+
+Make sure to use a model that supports tools from Ollama website
+
+ollama run qwen3:1.7b
+
+python client-ollama.py http://localhost:8080/sse
+
+use this query: get weather of scarsdale, ny. it's coordinates are 41.0051,-73.7846
+
+the reason we have to give the coordinates is because this is a small model, and it cannot find the coordinate by itself
